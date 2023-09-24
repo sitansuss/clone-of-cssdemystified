@@ -1,0 +1,270 @@
+:root {
+  --clr-primary: #fff;
+  --clr-primary-300: rgba(255, 255, 255, 0.8);
+  --clr-accent-300: #a9f0e2;
+  --clr-accent-400: #0fc5b0;
+  --clr-accent-500: #00937e;
+  --clr-accent-600: #0a4039;
+  --clr-secondary-200: #434956;
+  --clr-secondary-300: #272a2e;
+  --clr-secondary-400: #222529;
+  --clr-secondary-500: #1d1e20;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+  --fs-100: 0.64rem;
+  --fs-200: 0.8rem;
+  --fs-300: 1.125rem;
+  --fs-400: 1.325rem;
+  --fs-500: 1.563rem;
+  --fs-600: 1.563rem;
+  --fs-700: 2rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3.2rem;
+  --fs-xl: clamp(4.5rem, 1rem + 8vw, 9rem);
+  --ff-accent: atrament-web, sans-serif;
+  --ff-primary: basic-sans, sans-serif;
+  --spacer: 2rem;
+  --linear-gradient: linear-gradient(
+    90deg,
+    var(--clr-secondary-300),
+    var(--clr-secondary-400)
+  );
+  --glow-gradient: radial-gradient(
+    var(--clr-secondary-300),
+    var(--clr-secondary-400)
+  );
+}
+
+body {
+  background-color: var(--clr-secondary-300);
+  
+  
+}
+.first-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3.8rem;
+  
+}
+
+
+
+
+.style-text {
+  color: var(--clr-accent-400);
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+.first-paragraph {
+  color: var(--clr-primary-300);
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.first-list {
+  color: var(--clr-primary-300);
+  font-weight: 300;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.first-list > li::before {
+  
+  content: "\2022"; /* Unicode for bringing up the  bullet */
+
+  /* Styles for Indentation*/
+  color: var(--clr-accent-400);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.second-paragraph {
+  color: var(--clr-primary-300);
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.second-paragraph > span {
+  color: var(--clr-primary-300);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+
+.third-paragraph-span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--clr-primary-300);
+
+}
+
+.first-box {
+    
+    background-color: var(--clr-secondary-400);
+    font-weight: 300;
+    font-size: 2.43rem;
+    height: 10rem;
+    border-left-style:ridge;
+    border-left-width: 50px;
+    border-left-color: #0fc5b0;
+    border-radius: 0.25em;
+    border-left: 0.75em solid var(--clr-accent-400);
+    color: var(--clr-primary-300);
+    text-align: center;
+    line-height: 1.3;
+    padding: 1rem;
+    margin: calc(var(--flow-space)/ 1.5) 50%;
+    width: 90vw;
+    max-width: 45ch;
+    
+
+    
+}
+
+.second-container{
+    background-color: var(--clr-secondary-500);
+    
+}
+.second-container > h1 > span{
+    color: var(--clr-accent-400);
+}
+.second-container >  p{
+    font-weight: 300;
+    font-size: 1.42rem;
+    color: var(--clr-primary-300);
+}
+
+.second-container >  p + p{
+    font-weight: 700;
+    font-size: 1.42rem;
+    color: var(--clr-primary-300);
+}
+
+
+
+.card {
+    box-sizing: border-box;
+    float: left;
+  width: 25%;
+  padding: 0 10px;
+  border-style: solid 5px;
+  padding: 16px;
+  text-align: center;
+  background-color: var(--clr-accent-300);
+  margin-left: 20px;
+  border-radius: 5px;
+  
+  
+  
+}
+
+.benefits {
+    margin: 0 -5px;
+    
+}
+
+.benefits::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--clr-secondary-400);
+}
+
+.description {
+    font-weight: 400;
+    font-size: 1.35rem;
+    padding: 0;
+    margin: 16px 0px 0px;
+}
+
+
+.third-container{
+    background-color: var(--clr-secondary-400);
+}
+
+.third-container > h1{
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: var(--clr-accent-400);
+}
+.third-container > p {
+    font-weight: 700;
+    font-size: 1.42rem;
+    color: var(--clr-primary);
+}
+.third-container > ul {
+    color: var(--clr-primary-300);
+  font-weight: 300;
+  font-size: 1.4rem;
+  list-style: none;
+}
+  /*.third-container > ul > li::before {
+    content: "\2022"; /* Unicode for bringing up the  bullet */
+
+  /* Styles for Indentation*/
+  /*color: var(--clr-accent-400);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}*/
+.third-container-inner {
+    display: flex;
+}
+
+.packages {
+    box-sizing: border-box;
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+  
+  padding: 16px;
+  text-align: center;
+  
+  margin-left: 20px;
+  border-radius: 5px;
+  border-left: solid;
+}
+
+.packages-first-heading {
+    color: #eb8b3d;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.packages-second-heading {
+    color: #cccccc;
+    font-weight: 700;
+    font-size: 3.5rem;
+
+}
+.packages-third-heading {
+    color: #ffd700;
+    font-weight: 700;
+    font-size: 3.5rem;
+
+}
+.packages > h1 > span {
+    color: #595c5f;
+}
+
+.packages > ul {
+    list-style: none;
+}
+.packages > ul > li {
+    color: var(--clr-primary-300);
+}
+.packages > ul > li::before{
+    content: "\2022"; /* Unicode for bringing up the  bullet */
+
+  /* Styles for Indentation*/
+  color: var(--clr-accent-400);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
